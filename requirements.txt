@@ -1,0 +1,5 @@
+apache-airflow==2.6.3
+pandas==2.1.0
+pymongo==4.5.0
+google-api-python-client==2.93.0
+python-dotenv==1.0.0
