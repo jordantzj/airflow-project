@@ -1,7 +1,3 @@
-![image](https://github.com/user-attachments/assets/57e7b77c-dbbf-4b8d-91a2-984db23e8876)
-![image](https://github.com/user-attachments/assets/6fbf07a6-eabf-4c52-8d24-46dbde05df80)
-![image](https://github.com/user-attachments/assets/3c17cfb4-3331-40bb-b1aa-ab5e6b7f8c78)
-
 **Data pipeline orchestration using Airflow hosted on EC2**
 
 <img width="919" alt="Screenshot 2024-10-10 at 12 17 24 PM" src="https://github.com/user-attachments/assets/d3c873a9-f9a4-4d10-8d1e-408212969129">
