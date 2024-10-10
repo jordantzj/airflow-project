@@ -1,0 +1,35 @@
+nohup: ignoring input
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2024-10-09T14:30:48.170+0000] {_client.py:1026} INFO - HTTP Request: GET https://apacheairflow.gateway.scarf.sh/scheduler?version=2.10.2&python_version=3.12&platform=Linux&arch=x86_64&database=sqlite&db_version=3.45&executor=SequentialExecutor "HTTP/1.1 200 OK"
+[2024-10-09T14:30:48.234+0000] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-09 14:30:48 +0000] [6709] [INFO] Starting gunicorn 23.0.0
+[2024-10-09 14:30:48 +0000] [6709] [ERROR] Connection in use: ('::', 8793)
+[2024-10-09 14:30:48 +0000] [6709] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+[2024-10-09T14:30:48.273+0000] {scheduler_job_runner.py:935} INFO - Starting the scheduler
+[2024-10-09T14:30:48.274+0000] {scheduler_job_runner.py:942} INFO - Processing each file at most -1 times
+[2024-10-09T14:30:48.278+0000] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 6710
+[2024-10-09T14:30:48.279+0000] {scheduler_job_runner.py:1847} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2024-10-09T14:30:48.289+0000] {settings.py:63} INFO - Configured default timezone UTC
+[2024-10-09T14:30:48.313+0000] {manager.py:406} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[2024-10-09 14:30:49 +0000] [6709] [ERROR] Connection in use: ('::', 8793)
+[2024-10-09 14:30:49 +0000] [6709] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+[2024-10-09 14:30:50 +0000] [6709] [ERROR] Connection in use: ('::', 8793)
+[2024-10-09 14:30:50 +0000] [6709] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+[2024-10-09 14:30:51 +0000] [6709] [ERROR] Connection in use: ('::', 8793)
+[2024-10-09 14:30:51 +0000] [6709] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+[2024-10-09 14:30:52 +0000] [6709] [ERROR] Connection in use: ('::', 8793)
+[2024-10-09 14:30:52 +0000] [6709] [ERROR] connection to ('::', 8793) failed: [Errno 98] Address already in use
+[2024-10-09 14:30:53 +0000] [6709] [ERROR] Can't connect to ('::', 8793)
+[2024-10-09T14:35:48.323+0000] {scheduler_job_runner.py:1847} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2024-10-09T14:36:36.561+0000] {scheduler_job_runner.py:260} INFO - Exiting gracefully upon receiving signal 15
+[2024-10-09T14:36:36.660+0000] {process_utils.py:132} INFO - Sending 15 to group 6710. PIDs of all processes in the group: []
+[2024-10-09T14:36:36.660+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 6710
+[2024-10-09T14:36:36.660+0000] {process_utils.py:101} INFO - Sending the signal 15 to process 6710 as process group is missing.
+[2024-10-09T14:36:36.661+0000] {process_utils.py:132} INFO - Sending 15 to group 6710. PIDs of all processes in the group: []
+[2024-10-09T14:36:36.661+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 6710
+[2024-10-09T14:36:36.661+0000] {process_utils.py:101} INFO - Sending the signal 15 to process 6710 as process group is missing.
+[2024-10-09T14:36:36.662+0000] {scheduler_job_runner.py:1014} INFO - Exited execute loop

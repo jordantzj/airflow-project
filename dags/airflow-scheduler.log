@@ -1,0 +1,69 @@
+nohup: ignoring input
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2024-10-09T15:27:04.371+0000] {_client.py:1026} INFO - HTTP Request: GET https://apacheairflow.gateway.scarf.sh/scheduler?version=2.10.2&python_version=3.12&platform=Linux&arch=x86_64&database=sqlite&db_version=3.45&executor=SequentialExecutor "HTTP/1.1 200 OK"
+[2024-10-09T15:27:04.474+0000] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-09 15:27:04 +0000] [1333] [INFO] Starting gunicorn 23.0.0
+[2024-10-09 15:27:04 +0000] [1333] [INFO] Listening at: http://[::]:8793 (1333)
+[2024-10-09 15:27:04 +0000] [1333] [INFO] Using worker: sync
+[2024-10-09 15:27:04 +0000] [1334] [INFO] Booting worker with pid: 1334
+[2024-10-09 15:27:04 +0000] [1335] [INFO] Booting worker with pid: 1335
+[2024-10-09T15:27:04.550+0000] {scheduler_job_runner.py:935} INFO - Starting the scheduler
+[2024-10-09T15:27:04.551+0000] {scheduler_job_runner.py:942} INFO - Processing each file at most -1 times
+[2024-10-09T15:27:04.557+0000] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 1336
+[2024-10-09T15:27:04.559+0000] {scheduler_job_runner.py:1847} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2024-10-09T15:27:04.563+0000] {settings.py:63} INFO - Configured default timezone UTC
+[2024-10-09T15:27:04.595+0000] {manager.py:406} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[2024-10-09T15:27:42.947+0000] {scheduler_job_runner.py:423} INFO - 1 tasks up for execution:
+	<TaskInstance: youtube_dag.comments_collector manual__2024-10-09T15:27:41.652899+00:00 [scheduled]>
+[2024-10-09T15:27:42.947+0000] {scheduler_job_runner.py:495} INFO - DAG youtube_dag has 0/16 running and queued tasks
+[2024-10-09T15:27:42.948+0000] {scheduler_job_runner.py:634} INFO - Setting the following tasks to queued state:
+	<TaskInstance: youtube_dag.comments_collector manual__2024-10-09T15:27:41.652899+00:00 [scheduled]>
+[2024-10-09T15:27:42.950+0000] {scheduler_job_runner.py:736} INFO - Trying to enqueue tasks: [<TaskInstance: youtube_dag.comments_collector manual__2024-10-09T15:27:41.652899+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2024-10-09T15:27:42.950+0000] {scheduler_job_runner.py:680} INFO - Sending TaskInstanceKey(dag_id='youtube_dag', task_id='comments_collector', run_id='manual__2024-10-09T15:27:41.652899+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 2 and queue default
+[2024-10-09T15:27:42.951+0000] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'youtube_dag', 'comments_collector', 'manual__2024-10-09T15:27:41.652899+00:00', '--local', '--subdir', 'DAGS_FOLDER/youtube_dag.py']
+[2024-10-09T15:27:42.957+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'youtube_dag', 'comments_collector', 'manual__2024-10-09T15:27:41.652899+00:00', '--local', '--subdir', 'DAGS_FOLDER/youtube_dag.py']
+[2024-10-09T15:27:44.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/youtube_dag.py
+[2024-10-09T15:27:44.749+0000] {task_command.py:467} INFO - Running <TaskInstance: youtube_dag.comments_collector manual__2024-10-09T15:27:41.652899+00:00 [queued]> on host ip-172-31-80-220.ec2.internal
+[2024-10-09T15:27:46.459+0000] {scheduler_job_runner.py:764} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='youtube_dag', task_id='comments_collector', run_id='manual__2024-10-09T15:27:41.652899+00:00', try_number=1, map_index=-1)
+[2024-10-09T15:27:46.464+0000] {scheduler_job_runner.py:801} INFO - TaskInstance Finished: dag_id=youtube_dag, task_id=comments_collector, run_id=manual__2024-10-09T15:27:41.652899+00:00, map_index=-1, run_start_date=2024-10-09 15:27:44.895213+00:00, run_end_date=2024-10-09 15:27:45.850325+00:00, run_duration=0.955112, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=23, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2024-10-09 15:27:42.949555+00:00, queued_by_job_id=22, pid=1350
+[2024-10-09T15:27:46.522+0000] {scheduler_job_runner.py:423} INFO - 1 tasks up for execution:
+	<TaskInstance: youtube_dag.comments_mongo_loader manual__2024-10-09T15:27:41.652899+00:00 [scheduled]>
+[2024-10-09T15:27:46.522+0000] {scheduler_job_runner.py:495} INFO - DAG youtube_dag has 0/16 running and queued tasks
+[2024-10-09T15:27:46.522+0000] {scheduler_job_runner.py:634} INFO - Setting the following tasks to queued state:
+	<TaskInstance: youtube_dag.comments_mongo_loader manual__2024-10-09T15:27:41.652899+00:00 [scheduled]>
+[2024-10-09T15:27:46.523+0000] {scheduler_job_runner.py:736} INFO - Trying to enqueue tasks: [<TaskInstance: youtube_dag.comments_mongo_loader manual__2024-10-09T15:27:41.652899+00:00 [scheduled]>] for executor: SequentialExecutor(parallelism=32)
+[2024-10-09T15:27:46.523+0000] {scheduler_job_runner.py:680} INFO - Sending TaskInstanceKey(dag_id='youtube_dag', task_id='comments_mongo_loader', run_id='manual__2024-10-09T15:27:41.652899+00:00', try_number=1, map_index=-1) to SequentialExecutor with priority 1 and queue default
+[2024-10-09T15:27:46.524+0000] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'youtube_dag', 'comments_mongo_loader', 'manual__2024-10-09T15:27:41.652899+00:00', '--local', '--subdir', 'DAGS_FOLDER/youtube_dag.py']
+[2024-10-09T15:27:46.532+0000] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'youtube_dag', 'comments_mongo_loader', 'manual__2024-10-09T15:27:41.652899+00:00', '--local', '--subdir', 'DAGS_FOLDER/youtube_dag.py']
+[2024-10-09T15:27:47.757+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/youtube_dag.py
+[2024-10-09T15:27:48.331+0000] {task_command.py:467} INFO - Running <TaskInstance: youtube_dag.comments_mongo_loader manual__2024-10-09T15:27:41.652899+00:00 [queued]> on host ip-172-31-80-220.ec2.internal
+[2024-10-09T15:27:49.217+0000] {scheduler_job_runner.py:764} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='youtube_dag', task_id='comments_mongo_loader', run_id='manual__2024-10-09T15:27:41.652899+00:00', try_number=1, map_index=-1)
+[2024-10-09T15:27:49.221+0000] {scheduler_job_runner.py:801} INFO - TaskInstance Finished: dag_id=youtube_dag, task_id=comments_mongo_loader, run_id=manual__2024-10-09T15:27:41.652899+00:00, map_index=-1, run_start_date=2024-10-09 15:27:48.479619+00:00, run_end_date=2024-10-09 15:27:48.673527+00:00, run_duration=0.193908, state=success, executor=SequentialExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=24, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2024-10-09 15:27:46.522985+00:00, queued_by_job_id=22, pid=1354
+[2024-10-09T15:27:49.250+0000] {dagrun.py:854} INFO - Marking run <DagRun youtube_dag @ 2024-10-09 15:27:41.652899+00:00: manual__2024-10-09T15:27:41.652899+00:00, state:running, queued_at: 2024-10-09 15:27:41.675588+00:00. externally triggered: True> successful
+[2024-10-09T15:27:49.251+0000] {dagrun.py:905} INFO - DagRun Finished: dag_id=youtube_dag, execution_date=2024-10-09 15:27:41.652899+00:00, run_id=manual__2024-10-09T15:27:41.652899+00:00, run_start_date=2024-10-09 15:27:42.906339+00:00, run_end_date=2024-10-09 15:27:49.251114+00:00, run_duration=6.344775, state=success, external_trigger=True, run_type=manual, data_interval_start=2024-10-08 00:00:00+00:00, data_interval_end=2024-10-09 00:00:00+00:00, dag_hash=588a8d34b6287573bf9535f704d6184a
+[2024-10-09T15:32:04.624+0000] {scheduler_job_runner.py:1847} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2024-10-09T15:37:04.654+0000] {scheduler_job_runner.py:1847} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2024-10-09T15:38:14.612+0000] {scheduler_job_runner.py:260} INFO - Exiting gracefully upon receiving signal 15
+[2024-10-09 15:38:14 +0000] [1333] [ERROR] Worker (pid:1334) was sent SIGHUP!
+[2024-10-09 15:38:14 +0000] [1333] [ERROR] Worker (pid:1335) was sent SIGHUP!
+[2024-10-09 15:38:14 +0000] [1437] [INFO] Booting worker with pid: 1437
+[2024-10-09 15:38:14 +0000] [1451] [INFO] Booting worker with pid: 1451
+[2024-10-09 15:38:14 +0000] [1333] [INFO] Handling signal: hup
+[2024-10-09 15:38:14 +0000] [1333] [INFO] Hang up: Master
+[2024-10-09 15:38:14 +0000] [1488] [INFO] Booting worker with pid: 1488
+[2024-10-09 15:38:14 +0000] [1333] [INFO] Handling signal: term
+[2024-10-09 15:38:14 +0000] [1451] [INFO] Worker exiting (pid: 1451)
+[2024-10-09 15:38:14 +0000] [1437] [INFO] Worker exiting (pid: 1437)
+[2024-10-09 15:38:14 +0000] [1494] [INFO] Booting worker with pid: 1494
+[2024-10-09T15:38:15.240+0000] {process_utils.py:132} INFO - Sending 15 to group 1336. PIDs of all processes in the group: []
+[2024-10-09T15:38:15.241+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1336
+[2024-10-09T15:38:15.241+0000] {process_utils.py:101} INFO - Sending the signal 15 to process 1336 as process group is missing.
+[2024-10-09T15:38:15.242+0000] {process_utils.py:132} INFO - Sending 15 to group 1336. PIDs of all processes in the group: []
+[2024-10-09T15:38:15.243+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1336
+[2024-10-09T15:38:15.243+0000] {process_utils.py:101} INFO - Sending the signal 15 to process 1336 as process group is missing.
+[2024-10-09T15:38:15.244+0000] {scheduler_job_runner.py:1014} INFO - Exited execute loop
+[2024-10-09 15:38:44 +0000] [1333] [INFO] Shutting down: Master
