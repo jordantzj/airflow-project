@@ -1,0 +1,11 @@
+# Airflow
+logs/
+dags/__pycache__/
+plugins/__pycache__/
+airflow.cfg
+*.env
+venv/ 
+
+# Python
+*.pyc
+__pycache__/

@@ -1,0 +1,104 @@
+nohup: ignoring input
+/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/providers/fab/auth_manager/fab_auth_manager.py:523 FutureWarning: section/key [webserver/update_fab_perms] has been deprecated, you should use[fab/update_fab_perms] instead. Please update your `conf.get*` call to use the new name
+[2024-10-09 15:27:07 +0000] [1332] [INFO] Starting gunicorn 23.0.0
+[2024-10-09 15:27:07 +0000] [1332] [INFO] Listening at: http://0.0.0.0:8080 (1332)
+[2024-10-09 15:27:07 +0000] [1332] [INFO] Using worker: sync
+[2024-10-09 15:27:07 +0000] [1340] [INFO] Booting worker with pid: 1340
+[2024-10-09 15:27:07 +0000] [1341] [INFO] Booting worker with pid: 1341
+[2024-10-09 15:27:07 +0000] [1342] [INFO] Booting worker with pid: 1342
+[2024-10-09 15:27:07 +0000] [1343] [INFO] Booting worker with pid: 1343
+116.88.35.14 - - [09/Oct/2024:15:27:13 +0000] "GET / HTTP/1.1" 302 197 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/www/views.py:884 SADeprecationWarning: DISTINCT ON is currently supported only by the PostgreSQL dialect.  Use of DISTINCT ON for other backends is currently silently ignored, however this usage is deprecated, and will raise CompileError in a future release for all backends that do not support this syntax.
+/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/www/views.py:938 SADeprecationWarning: DISTINCT ON is currently supported only by the PostgreSQL dialect.  Use of DISTINCT ON for other backends is currently silently ignored, however this usage is deprecated, and will raise CompileError in a future release for all backends that do not support this syntax.
+116.88.35.14 - - [09/Oct/2024:15:27:14 +0000] "GET /home HTTP/1.1" 200 42636 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:15 +0000] "POST /blocked HTTP/1.1" 200 2 "http://44.201.151.70:8080/home" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:15 +0000] "POST /dag_stats HTTP/1.1" 200 151 "http://44.201.151.70:8080/home" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:15 +0000] "POST /last_dagruns HTTP/1.1" 200 316 "http://44.201.151.70:8080/home" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:15 +0000] "POST /task_stats HTTP/1.1" 200 516 "http://44.201.151.70:8080/home" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:19 +0000] "GET /dags/youtube_dag/grid HTTP/1.1" 200 9323 "http://44.201.151.70:8080/home" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:20 +0000] "GET /object/next_run_datasets/youtube_dag HTTP/1.1" 200 39 "http://44.201.151.70:8080/dags/youtube_dag/grid" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:20 +0000] "GET /object/grid_data?dag_id=youtube_dag&num_runs=25 HTTP/1.1" 200 6889 "http://44.201.151.70:8080/dags/youtube_dag/grid" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:22 +0000] "GET /api/v1/dags/youtube_dag HTTP/1.1" 200 1084 "http://44.201.151.70:8080/dags/youtube_dag/grid" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:22 +0000] "GET /api/v1/dags/youtube_dag/details HTTP/1.1" 200 1469 "http://44.201.151.70:8080/dags/youtube_dag/grid" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:24 +0000] "GET /object/graph_data?dag_id=youtube_dag HTTP/1.1" 200 241 "http://44.201.151.70:8080/dags/youtube_dag/grid?tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:24 +0000] "GET /api/v1/datasets?dag_ids=youtube_dag HTTP/1.1" 200 44 "http://44.201.151.70:8080/dags/youtube_dag/grid?tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:41 +0000] "POST /dags/youtube_dag/trigger?origin=%2Fdags%2Fyoutube_dag%2Fgrid HTTP/1.1" 302 401 "http://44.201.151.70:8080/dags/youtube_dag/grid?tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:42 +0000] "GET /dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00 HTTP/1.1" 200 9441 "http://44.201.151.70:8080/dags/youtube_dag/grid?tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:42 +0000] "GET /object/next_run_datasets/youtube_dag HTTP/1.1" 200 39 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:42 +0000] "GET /object/grid_data?dag_id=youtube_dag&num_runs=25 HTTP/1.1" 200 7671 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:46 +0000] "GET /object/graph_data?dag_id=youtube_dag HTTP/1.1" 200 241 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:46 +0000] "GET /api/v1/datasets?dag_ids=youtube_dag HTTP/1.1" 200 44 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:46 +0000] "GET /api/v1/dags/youtube_dag HTTP/1.1" 200 1084 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:46 +0000] "GET /api/v1/datasets/events?source_dag_id=youtube_dag&source_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00 HTTP/1.1" 200 49 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:46 +0000] "GET /object/grid_data?dag_id=youtube_dag&num_runs=25 HTTP/1.1" 200 7834 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:46 +0000] "GET /api/v1/dags/youtube_dag/details HTTP/1.1" 200 1469 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+116.88.35.14 - - [09/Oct/2024:15:27:49 +0000] "GET /object/grid_data?dag_id=youtube_dag&num_runs=25 HTTP/1.1" 200 7952 "http://44.201.151.70:8080/dags/youtube_dag/grid?dag_run_id=manual__2024-10-09T15%3A27%3A41.652899%2B00%3A00&tab=graph" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+Running the Gunicorn Server with:
+Workers: 4 sync
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: - -
+Access Logformat: 
+=================================================================
+[2024-10-09T15:38:14.638+0000] {webserver_command.py:430} INFO - Received signal: 15. Closing gunicorn.
+[2024-10-09 15:38:14 +0000] [1332] [INFO] Handling signal: hup
+[2024-10-09 15:38:14 +0000] [1332] [INFO] Hang up: Master
+[2024-10-09 15:38:14 +0000] [1332] [ERROR] Worker (pid:1340) was sent SIGHUP!
+[2024-10-09 15:38:14 +0000] [1332] [ERROR] Worker (pid:1341) was sent SIGHUP!
+[2024-10-09 15:38:14 +0000] [1332] [ERROR] Worker (pid:1342) was sent SIGHUP!
+[2024-10-09 15:38:14 +0000] [1441] [INFO] Booting worker with pid: 1441
+[2024-10-09 15:38:14 +0000] [1442] [INFO] Booting worker with pid: 1442
+[2024-10-09 15:38:14 +0000] [1332] [ERROR] Worker (pid:1343) was sent SIGHUP!
+[2024-10-09 15:38:14 +0000] [1448] [INFO] Booting worker with pid: 1448
+[2024-10-09 15:38:14 +0000] [1332] [INFO] Handling signal: term
+[2024-10-09 15:38:14 +0000] [1452] [INFO] Booting worker with pid: 1452
+[2024-10-09 15:38:14 +0000] [1442] [INFO] Worker exiting (pid: 1442)
+[2024-10-09 15:38:14 +0000] [1448] [INFO] Worker exiting (pid: 1448)
+[2024-10-09 15:38:14 +0000] [1441] [INFO] Worker exiting (pid: 1441)
+[2024-10-09 15:38:44 +0000] [1332] [INFO] Shutting down: Master
+Traceback (most recent call last):
+  File "/home/ubuntu/airflow-project/airflow_venv/bin/airflow", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/__main__.py", line 62, in main
+    args.func(args)
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/utils/providers_configuration_loader.py", line 55, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 485, in webserver
+    run_command_with_daemon_option(
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/daemon_utils.py", line 86, in run_command_with_daemon_option
+    callback()
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 488, in <lambda>
+    callback=lambda: start_and_monitor_gunicorn(args),
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 475, in start_and_monitor_gunicorn
+    monitor_gunicorn(gunicorn_master_proc)
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 457, in monitor_gunicorn
+    ).start()
+      ^^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 220, in start
+    sleep(1)
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 445, in <lambda>
+    signal.signal(signal.SIGTERM, lambda signum, _: kill_proc(signum, gunicorn_master_proc))
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/airflow-project/airflow_venv/lib/python3.12/site-packages/airflow/cli/commands/webserver_command.py", line 433, in kill_proc
+    gunicorn_master_proc.wait(timeout=30)
+  File "/usr/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/home/ubuntu/airflow-project/airflow_venv/bin/python3', '-m', 'gunicorn', '--workers', '4', '--worker-class', 'sync', '--timeout', '120', '--bind', '0.0.0.0:8080', '--name', 'airflow-webserver', '--pid', '/home/ubuntu/airflow/airflow-webserver.pid', '--config', 'python:airflow.www.gunicorn_config', '--access-logfile', '-', '--error-logfile', '-', 'airflow.www.app:cached_app()', '--preload']' timed out after 30 seconds
